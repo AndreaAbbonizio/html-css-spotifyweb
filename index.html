@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,19 +22,99 @@
     
                 <div class="head-top">
                     <div class="container-logo">
-                        <img src="" alt="">
+                        <img src="img/logo.svg" alt="logo">
                     </div>
                     <div class="list-header">
-        
+                        <ul id="first-item">
+                            <li>
+                                <img src="img/home.svg" alt="home">
+                            </li>
+                            <li>
+                                <strong>Home</strong>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <img src="img/search.svg" alt="search">
+                            </li>
+                            <li>
+                                Cerca
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <img src="img/libreria.svg" alt="search">
+                            </li>
+                            <li>
+                                Libreria
+                            </li>
+                        </ul>
+
+                        <p>
+                            <strong>
+                                PLAYLIST
+                            </strong>
+                        </p>
+
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-square-plus"></i>
+                            </li>
+                            <li>
+                                Libreria
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>Nome Playlist</li>
+                        </ul>
+
+                        <ul>
+                            <li>Nome Playlist</li>
+                        </ul>
+
+                        <ul>
+                            <li>Nome Playlist</li>
+                        </ul>
+
+                        <ul>
+                            <li>Nome Playlist</li>
+                        </ul>
+
+                        <ul>
+                            <li>Nome Playlist</li>
+                        </ul>
+
+                        <ul>
+                            <li>Nome Playlist</li>
+                        </ul>
+
+                        <ul>
+                            <li>Nome Playlist</li>
+                        </ul>
                     </div>
                 </div>
         
                 <div class="head-bottom">
                     <div class="download-container">
-        
+                        <div class="download-image">
+                            <img src="img/download.svg" alt="download">
+                        </div>
+                        <div>
+                            Download
+                        </div>
                     </div>
                     <div class="profile-container">
-        
+                        <div class="profile-image">
+                            <img src="img/profile.svg" alt="profile">
+                        </div>
+                        <div class="text-profile">
+                            <strong>
+                                John Dee
+                            </strong>
+                        </div>
                     </div>
                 </div>
     
@@ -41,24 +125,32 @@
     
         <!-- main -->
         <main>
+
+            <!--/ upgrade bar -->
+            <div class="container-fixed">
+                
+                <div class="upgrade-bar">
+                    <div class="upgrade-button">
+                        <button>
+                            Effetua l'Upgrade
+                        </button> 
+                    </div>
+                </div>
+                <!--/ upgrade bar -->
     
-            <!-- upgrade bar -->
-            <div class="upgrade-bar">
-                <div class="upgrade-button">
-    
+                <!-- link main -->
+                <div class="link-main">
+                    <ul>
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
+                    </ul>
                 </div>
             </div>
-            <!--/ upgrade bar -->
-
-            <!-- link main -->
-            <div class="link-main">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+            <!-- upgrade bar -->
              <!--/ link main -->
 
 
@@ -66,19 +158,91 @@
             <div class="container-center">
 
                 <div class="container-album">
-                    <h2></h2>
+                    <h2>
+                        Recently Played
+                    </h2>
                     <div class="row">
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
-                        <div class="col"></div>
+                        <div class="col">
+                            <div class="image-album">
+                                <img src="img/metal_lifting.jpg" alt="heavy metal">
+                            </div>
+                            <div class="title-album">
+                                <h3>Heavy Metal</h3>
+                            </div>
+                            <div class="description-album">
+                                Subtitle
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="image-album">
+                                <img src="img/stranger.jpeg" alt="heavy metal">
+                            </div>
+                            <div class="title-album">
+                                <h3>
+                                    Stranger Things, Vol.1 (a Netflix Original Soundtrack Series)
+                                </h3>
+                            </div>
+                            <div class="description-album">
+                                Kyle Dixon & Micheal Stain
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="image-album">
+                                <img src="img/aquietplace.jpeg" alt="heavy metal">
+                            </div>
+                            <div class="title-album">
+                                <h3>Heavy Metal</h3>
+                            </div>
+                            <div class="description-album">
+                                Subtitle
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="image-album">
+                                <img src="img/split.jpeg" alt="heavy metal">
+                            </div>
+                            <div class="title-album">
+                                <h3>Heavy Metal</h3>
+                            </div>
+                            <div class="description-album">
+                                Subtitle
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="image-album">
+                                <img src="img/cure.jpeg" alt="heavy metal">
+                            </div>
+                            <div class="title-album">
+                                <h3>Heavy Metal</h3>
+                            </div>
+                            <div class="description-album">
+                                Subtitle
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="image-album">
+                                <img src="img/sinister.jpeg" alt="heavy metal">
+                            </div>
+                            <div class="title-album">
+                                <h3>Heavy Metal</h3>
+                            </div>
+                            <div class="description-album">
+                                Subtitle
+                            </div>
+                        </div>
+
+
+                        
                     </div>
                 </div>
     
                 <div class="container-album">
-                    <h2></h2>
+                    <h2>Creato per John Doe</h2>
                     <p></p>
                     <div class="row">
                         <div class="col"></div>
@@ -102,29 +266,29 @@
         </main>
         <!--/ main -->
 
-        <!-- footer -->
-        <footer>
-            <!-- play-bar -->
-            <div class="container-playbar">
-                <div class="playbar-left">
-
-                </div>
-
-                <div class="playbar-center">
-
-                </div>
-
-                <div class="playbar-right">
-
-                </div>
-            </div>
-    
-    
-            <!-- play-bar -->
-        </footer>
-        <!-- footer -->
         
     </div>
+    <!-- footer -->
+    <footer>
+        <!-- play-bar -->
+        <div class="container-playbar">
+            <div class="playbar-left">
+
+            </div>
+
+            <div class="playbar-center">
+
+            </div>
+
+            <div class="playbar-right">
+
+            </div>
+        </div>
+
+
+        <!-- play-bar -->
+    </footer>
+    <!-- footer -->
     
 
 
