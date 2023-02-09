@@ -92,6 +92,11 @@ header .container-head .head-top .list-header ul{
     margin-bottom: .5em;
 }
 
+header .container-head .head-top .list-header ul li a{
+    color: rgba(255, 255, 255, 0.600);
+    text-decoration-line: none;
+}
+
 header .container-head .head-top .list-header #first-item li:first-child{
     height: 27px;
     margin-right: 1em;
@@ -199,18 +204,15 @@ main .container-fixed{
 
 
 main .upgrade-bar{
-    position: relative;
-    height: 50px;
-    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5em;
+    padding-top: 25px;
+    height: 80px;
+    width: calc(100% - 200px);
     background-color: black;
     opacity: .7;
 
-}
-
-main .upgrade-bar .upgrade-button{
-    position: absolute;
-    right: 230px;
-    top: 10px;
 }
 
 main .upgrade-bar .upgrade-button button{
@@ -219,14 +221,19 @@ main .upgrade-bar .upgrade-button button{
     background-color: transparent;
     color: white;
     border: 1px solid white;
+    padding: 8px 20px;
+    text-transform: uppercase;
 }
+
+
+
 
 /*/ upgrade bar */
 
 
 /* link main */
 main .link-main{
-    margin:80px 0 30px;
+    padding: 90px 20px 30px;
 }
 
 main .link-main ul {
@@ -235,7 +242,33 @@ main .link-main ul {
     flex-wrap: wrap;
     gap: 20px;
     list-style-type: none;
-    color: gray;
+    font-weight: bold;
+}
+
+main .link-main ul li{
+    position: relative;
+    color: white;
+    opacity: .6;
+}
+
+
+main .link-main ul li a{
+    color: rgba(255, 255, 255, 0.600); 
+    text-decoration-line: none;
+}
+
+
+main .link-main ul .active::before{
+    content: "";
+    
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, 50%);
+
+    width: 50px;
+    height: 3px;
+    background-color: green;
 }
 
 
@@ -271,17 +304,36 @@ main .container-album .row .col{
 }
 
 main .container-album .row .col .image-album{
-    height: 100%;
-    max-height: 200px;
+    position: relative;
+    min-height: 100px;
     width: 100%;
     
 }
 
 main .container-album .row .col .image-album img{
-    height: 100%;
     width: 100%;
-    object-fit: contain;
 }
+
+main .container-album .row .col .image-album .icon-play{
+    display: none;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    font-size: 3.4em;
+    
+}
+
+
+main .container-album .row .col .image-album:hover .icon-play{
+    display: block;
+    color: white;
+}
+
+main .container-album .row .col .image-album:hover{
+    opacity: .4;
+}
+
 
 main .container-album .row .col>*{
     margin-bottom: 10px;
@@ -348,6 +400,17 @@ footer .container-playbar .playbar-left .track-image{
 footer .container-playbar .playbar-left .track-image img{
     width: 100%;
 }
+
+
+footer .container-playbar .playbar-left .track-details a{
+    text-decoration-line: none;
+    color: rgba(255, 255, 255, 0.600);
+}
+
+footer .container-playbar .playbar-left .track-details .bold{
+    font-weight: bold;
+}
+
 
 
 
@@ -494,10 +557,48 @@ footer .container-playbar .playbar-right .player-level-volume .player-volume-bar
         width: calc(100% / 2 - 20px / 2 );
     }
 
-    main .upgrade-bar .upgrade-button{
-        right: 100px;
+    main .upgrade-bar{
+        width: calc(100% - 80px);
     }
+    
 }
 
 
 /* Media queries */
+
+
+/* hover */
+header .container-head .head-top .list-header ul li a:hover{
+    color: white;
+}
+
+header .container-head .head-bottom .download-container:hover{
+    color: white;
+}
+
+main .upgrade-bar .upgrade-button button:hover{
+    transform: scale(1.2);
+}
+
+main .link-main ul li a:hover{
+    color: white;
+}
+
+
+
+main .container-album .row .col .image-album:hover .icon-play{
+    display: block;
+    color: white;
+}
+
+main .container-album .row .col .image-album:hover{
+    opacity: .4;
+}
+
+
+footer .container-playbar .playbar-left .track-details a:hover{
+    text-decoration-line: underline;
+}
+
+
+/* /hover */
