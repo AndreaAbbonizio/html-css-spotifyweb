@@ -461,8 +461,20 @@ footer .playbar-center .player-buttons {
   
     background-color: #5a5a5a;
   }
+
+  footer .point-time{
+    display: none;
+    width: 17px;
+    height: 17px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    transform: translate(50%, -50%)
+  }
   
   footer .playbar-center .player-timeline .player-timeline-bar .player-timeline-bar-total .player-timeline-bar-current {
+    position: relative;
     background-color: #c1c1c1;
   
     width: 15%;
@@ -501,6 +513,7 @@ footer .container-playbar .playbar-right .player-level-volume .player-volume-bar
 
 
 footer .container-playbar .playbar-right .player-level-volume .player-volume-bar-current{
+    position: relative;
     background-color: #c1c1c1;
   
     width: 15%;
@@ -600,5 +613,37 @@ footer .container-playbar .playbar-left .track-details a:hover{
     text-decoration-line: underline;
 }
 
+
+footer .container-playbar .playbar-left .track-button i:hover{
+    color: white;
+}
+
+footer .playbar-center .player-buttons i:hover{
+    color: white;
+}
+
+footer .playbar-center .player-buttons #play-button:hover{
+    transform: scale(1.4);
+}
+
+footer .playbar-center .player-timeline .player-timeline-bar .player-timeline-bar-total:hover .player-timeline-bar-current{
+    background-color: green;
+}
+
+footer .container-playbar .playbar-right .playbar-right-button i:hover{
+    color: white;
+}
+
+footer .container-playbar .playbar-right .player-level-volume .player-volume-bar-total:hover .player-volume-bar-current{
+    background-color: green;
+}
+
+footer .playbar-center .player-timeline .player-timeline-bar:hover .point-time{
+    display: block;
+}
+
+footer .container-playbar .playbar-right .player-level-volume .player-volume-bar-total:hover .point-time{
+    display: block;
+}
 
 /* /hover */
